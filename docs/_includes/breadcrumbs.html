@@ -1,5 +1,5 @@
 {% assign parts = page.url | split: '/' %}
-<nav class="breadcrumbs">
+<div class="breadcrumbs">
   <a href="{{ '/' | relative_url }}">Home</a>
   {% assign path = '' %} {% for part in parts %} {% if part != "" %} {% assign
   path = path | append: '/' | append: part %} ›
@@ -7,4 +7,4 @@
     >{{ part | replace: '-', ' ' | capitalize }}</a
   >
   {% endif %} {% endfor %}
-</nav>
+</div>

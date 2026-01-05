@@ -1,4 +1,4 @@
-- title: "Beschreibung"
+- title: "Description"
   url: /docs/description
 
 - title: "Features"
@@ -7,21 +7,28 @@
 - title: "Setup"
   url: /docs/setup/
 
-- title: "Build"
-  url: /docs/build/
-
 - title: "Usage"
   url: /docs/usage/
 
 - title: "Screenshots"
   url: /docs/screenshots/
 
-- title: "Architektur"
+- title: "Development"
+  url: /docs/development/
+  children:
+    - title: "Build"
+      url: /docs/build/
+    - title: "API's"
+      url: /docs/apis/
+
+- title: "Architecture"
   url: /docs/architecture/
   children:
-    - title: "Übersicht"
-      url: /docs/architecture/overview
-    - title: "Komponente A"
-      url: /docs/architecture/component-a
-    - title: "Komponente B"
-      url: /docs/architecture/component-b
+    - title: "Frontend"
+      url: /docs/architecture/frontend
+    - title: "Backend"
+      url: /docs/architecture/backend
+    - title: "Backend Admin"
+      url: /docs/architecture/backend-admin
+    - title: "Database"
+      url: /docs/architecture/database
