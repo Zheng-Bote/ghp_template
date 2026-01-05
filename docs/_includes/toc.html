@@ -3,28 +3,25 @@
   <ul class="toc-list">
     {% assign html = page.content | markdownify %}
 
-    {%- comment -%}
-    Wir splitten nach <h2, <h3 und <h4, indem wir ein gemeinsames Muster nutzen.
-    {%- endcomment -%}
-
     {% assign headings = html | split: '<h' %}
 
     {% for h in headings %}
       {% if h contains '</h' %}
         {% assign level = h | slice: 0, 1 | plus: 0 %}
-
         {% if level >= 2 and level <= 4 %}
-          {% assign tag = 'h' | append: level %}
+          {% comment %} Inhalt nach dem ersten '>' holen (sichtbarer Text) {% endcomment %}
+          {% assign after_gt_parts = h | split: '>' %}
+          {% assign after_gt = after_gt_parts | slice: 1, 999 | join: '>' %}
+          {% assign text = after_gt | split: '</' | first | strip_html | strip %}
 
-          {%- comment -%}
-          ID extrahieren
-          {%- endcomment -%}
-          {% assign id = h | split: 'id="' | last | split: '"' | first %}
-
-          {%- comment -%}
-          Text extrahieren
-          {%- endcomment -%}
-          {% assign text = h | split: '</' | first | strip_html | strip %}
+          {% comment %} ID extrahieren: erst id="..." prüfen, sonst aus Text slugify als Fallback {% endcomment %}
+          {% if h contains 'id="' %}
+            {% assign id = h | split: 'id="' | last | split: '"' | first %}
+          {% elsif h contains "id='" %}
+            {% assign id = h | split: "id='" | last | split: "'" | first %}
+          {% else %}
+            {% assign id = text | slugify %}
+          {% endif %}
 
           <li class="toc-level-{{ level }}">
             <a href="#{{ id }}">{{ text }}</a>

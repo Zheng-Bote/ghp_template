@@ -1,7 +1,7 @@
 <ul class="nav-level">
   {% for item in site.data.nav %}
   <li>
-    <a href="{{ item.url }}">{{ item.title }}</a>
+    <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
 
     {% if item.children %}
     <ul class="nav-sub">
