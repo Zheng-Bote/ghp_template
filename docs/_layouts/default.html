@@ -1,40 +1,108 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{{ page.title }}</title>
+
+    <meta
+      name="description"
+      content="A modern desktop application for securely encrypting and decrypting files on Linux, Windows, and MacOS. The application uses AES-256 CBC encryption and is optimized for high performance with low memory usage."
+    />
+    <meta name="version" content="v2.1.0" />
+    <meta name="author" content="ZHENG Robert" />
+    <meta name="date" content="2025-12-24T10:45:00+01:00" />
+    <meta
+      name="keywords"
+      content="File encryption, File decryption, Qt6, C++23, AES-256 CBC, ZHENG Bote, Robert Zheng"
+    />
+
+    <meta name="robots" content="index, follow" />
+    <meta name="googlebot" content="index, follow" />
+
+    <meta
+      property="og:title"
+      content="File Encryption & Decryption (Desktop)"
+    />
+    <meta
+      property="og:description"
+      content="A modern desktop application for securely encrypting and decrypting files on Linux, Windows, and MacOS. The application uses AES-256 CBC encryption and is optimized for high performance with low memory usage."
+    />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:url"
+      content="https://zheng-bote.github.io/qt-desktop_file_encryption-decryption/"
+    />
+    <meta
+      property="og:image"
+      content="https://zheng-bote.github.io/qt-desktop_file_encryption-decryption/assets/img/icons/favicon.svg"
+    />
+
     <link
-      rel="stylesheet"
-      href="{{ '/assets/css/style.css' | relative_url }}"
+      rel="shortcut icon"
+      href="{{ '/assets/favicon.ico' | relative_url }}"
+      type="image/x-icon"
     />
     <link
+      rel="icon"
+      type="image/svg+xml"
+      href="{{ '/assets/favicon.svg' | relative_url }}"
+    />
+
+    <link
+      href="{{ '/assets/css/index.css' | relative_url }}"
       rel="stylesheet"
-      href="{{ '/assets/css/dark.css' | relative_url }}"
-      media="(prefers-color-scheme: dark)"
+      type="text/css"
     />
     <link
+      href="{{ '/assets/css/page-structure.css' | relative_url }}"
       rel="stylesheet"
-      href="{{ '/assets/css/syntax.css' | relative_url }}"
+      type="text/css"
+    />
+
+    <link
+      href="{{ '/assets/css/format.css' | relative_url }}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="{{ 'assets/css/image.css' | relative_url }}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="{{ '/assets/css/text.css' | relative_url }}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="{{ '/assets/css/coding.css' | relative_url }}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="{{ '/assets/css/attribute.css' | relative_url }}"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <link
+      href="{{ '/assets/css/link.css' | relative_url }}"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      rel="preload"
+      href="{{ '/assets/favicon.svg' | relative_url }}"
+      as="image"
     />
   </head>
 
-  <body>
-    {% include header.html %}
+  <body id="body" class="page-structure">
+    {% include header.html %} {% include nav.html %}
 
-    <div class="layout">
-      <aside class="sidebar">{% include sidebar.html %}</aside>
-
-      <main class="content">{% include breadcrumbs.html %} {{ content }}</main>
-    </div>
+    <main>{% include breadcrumbs.html %} {{ content }}</main>
 
     {% include footer.html %}
-
-    <script>
-      // Mobile-Menü Toggle
-      function toggleMenu() {
-        document.querySelector(".sidebar").classList.toggle("open");
-      }
-    </script>
   </body>
 </html>

@@ -1,4 +1,4 @@
-<nav>
+<aside>
   <h2>&nbsp;</h2>
   {% for item in site.data.nav %}
   <a href="{{ site.baseurl }}{{ item.url }}"
@@ -11,4 +11,4 @@
   {% if child.children %} {% for grand in child.children %}
   <a href="{{ grand.url }}"><button>{{ grand.title }}</button></a>
   {% endfor %} {% endif %} {% endfor %} {% endif %} {% endfor %}
-</nav>
+</aside>
