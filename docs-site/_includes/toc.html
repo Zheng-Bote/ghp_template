@@ -1,0 +1,15 @@
+<div class="toc">
+  <h3>Inhalt</h3>
+  <ul>
+    {% assign html = page.content | markdownify %}
+    {% assign segments = html | split: '<h2' %}
+    {% for segment in segments %}
+      {% if forloop.index0 > 0 %}
+        {% assign heading = segment | split: '</h2>' | first %}
+        {% assign text = heading | strip_html | strip %}
+        {% assign id = text | slugify %}
+        <li><a href="#{{ id }}">{{ text }}</a></li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>

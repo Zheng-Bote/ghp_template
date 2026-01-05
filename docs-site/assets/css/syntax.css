@@ -1,0 +1,19 @@
+code,
+pre {
+  background: #f0f0f0;
+  padding: 2px 4px;
+  border-radius: 4px;
+  font-family: Consolas, Menlo, monospace;
+}
+
+pre {
+  padding: 0.75rem;
+  overflow-x: auto;
+}
+
+@media (prefers-color-scheme: dark) {
+  code,
+  pre {
+    background: #333;
+  }
+}

@@ -1,0 +1,27 @@
+- title: "Beschreibung"
+  url: /docs/description/
+
+- title: "Features"
+  url: /docs/features/
+
+- title: "Setup"
+  url: /docs/setup/
+
+- title: "Build"
+  url: /docs/build/
+
+- title: "Usage"
+  url: /docs/usage/
+
+- title: "Screenshots"
+  url: /docs/screenshots/
+
+- title: "Architektur"
+  url: /docs/architecture/
+  children:
+    - title: "Übersicht"
+      url: /docs/architecture/overview/
+    - title: "Komponente A"
+      url: /docs/architecture/component-a/
+    - title: "Komponente B"
+      url: /docs/architecture/component-b/
