@@ -26,12 +26,6 @@
       <aside class="sidebar">{% include sidebar.html %}</aside>
 
       <main class="content">{% include breadcrumbs.html %} {{ content }}</main>
-
-      <div>
-        <p>
-          last modified: {{ article.published_at | date: "%Y-%m-%d %H:%M" }}
-        </p>
-      </div>
     </div>
 
     {% include footer.html %}
