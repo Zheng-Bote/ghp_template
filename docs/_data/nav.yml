@@ -1,5 +1,5 @@
 - title: "Beschreibung"
-  url: /docs/description/
+  url: /docs/description
 
 - title: "Features"
   url: /docs/features/
@@ -22,6 +22,6 @@
     - title: "Übersicht"
       url: /docs/architecture/overview
     - title: "Komponente A"
-      url: docs/architecture/component-a
+      url: /docs/architecture/component-a
     - title: "Komponente B"
       url: /docs/architecture/component-b

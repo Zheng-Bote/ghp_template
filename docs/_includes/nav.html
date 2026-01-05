@@ -7,7 +7,7 @@
     <ul class="nav-sub">
       {% for child in item.children %}
       <li>
-        <a href="{{ site.baseurl }}{{ child.url }}">{{ child.title }}</a>
+        <a href="{{ site.baseurl }}{{ child.url }}">Child: {{ child.title }}</a>
 
         {% if child.children %}
         <ul class="nav-sub">
