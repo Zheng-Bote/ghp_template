@@ -10,8 +10,6 @@ layout: page
         </div>
       </article>
 
-### Feature 3
-
 bla bla
 
-</article>
+</article markdown="0">
