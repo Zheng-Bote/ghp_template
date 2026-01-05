@@ -20,8 +20,8 @@
   url: /docs/architecture/
   children:
     - title: "Übersicht"
-      url: docs/architecture/overview
+      url: /docs/architecture/overview
     - title: "Komponente A"
       url: docs/architecture/component-a
     - title: "Komponente B"
-      url: docs/architecture/component-b
+      url: /docs/architecture/component-b
