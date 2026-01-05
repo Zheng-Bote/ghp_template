@@ -4,21 +4,11 @@ layout: page
 ---
 
 <article>
-# Beschreibung
-
-Hier steht die allgemeine Beschreibung deiner Software.
-
-## Details
-
-bla bla details
-
-# Features
-
-bla
-
-## Feauture 2
-
-bla bla
+<h3>Latest News</h3>
+        <div class="text_70ch">
+          <p>No news at the moment. Please check back later!</p>
+        </div>
+      </article>
 
 ### Feature 3
 
