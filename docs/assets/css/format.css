@@ -22,18 +22,10 @@
 
 article,
 section {
-  margin: 10px;
-  padding: 10px;
-  border: var(--border-width) var(--border-style)
-    light-dark(var(--primary-color), var(--secondary-color));
+  margin: var(--margin5);
+  padding: var(--padding5);
+  border: var(--border-width) var(--border-style) var(--primary-color);
   border-radius: var(--border-radius);
-}
-article {
-  background-color: light-dark(var(--secondary-color), var(--primary-color));
-}
-
-section {
-  background-color: light-dark(var(--secondary-color), var(--primary-color));
 }
 
 section.listbox p {

@@ -126,6 +126,7 @@ footer {
     border-radius: var(--border-radius);
     /* Border überall, nicht nur oben */
     border: var(--border-width) solid var(--glass-border-color);
+    height: fit-content;
   }
 
   /* Damit Copyright genau in der Mitte ist, geben wir allen Teilen 

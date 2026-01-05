@@ -20,9 +20,9 @@
 .title {
   font-weight: bold;
 }
-.txt {
+.text_70ch {
   max-width: 70ch;
-  padding: 3em 1em;
+
   margin: auto;
   line-height: 1.75;
   text-wrap: pretty;

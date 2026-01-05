@@ -50,7 +50,7 @@
     />
 
     <link
-      href="{{ '/assets/css/index.css' | relative_url }}"
+      href="{{ '/assets/css/main.css' | relative_url }}"
       rel="stylesheet"
       type="text/css"
     />
@@ -90,18 +90,14 @@
       rel="stylesheet"
       type="text/css"
     />
-
-    <link
-      rel="preload"
-      href="{{ '/assets/favicon.svg' | relative_url }}"
-      as="image"
-    />
   </head>
 
-  <body id="body" class="page-structure">
-    {% include header.html %} {% include nav.html %}
+  <body id="body" class="body">
+    {% include header.html %} {% include aside.html %}
 
-    <main>{% include breadcrumbs.html %} {{ content }}</main>
+    <main id="main" class="main">
+      {% include breadcrumbs.html %} {{ content }}
+    </main>
 
     {% include aside.html %} {% include footer.html %}
   </body>

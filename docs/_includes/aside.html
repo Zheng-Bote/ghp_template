@@ -1,14 +1,1 @@
-<aside>
-  <h2>&nbsp;</h2>
-  {% for item in site.data.nav %}
-  <a href="{{ site.baseurl }}{{ item.url }}"
-    ><button>{{ item.title }}</button></a
-  >
-  {% if item.children %} {% for child in item.children %}
-  <a href="{{ site.baseurl }}{{ child.url }}"
-    ><button>{{ child.title }}</button></a
-  >
-  {% if child.children %} {% for grand in child.children %}
-  <a href="{{ grand.url }}"><button>{{ grand.title }}</button></a>
-  {% endfor %} {% endif %} {% endfor %} {% endif %} {% endfor %}
-</aside>
+<aside id="aside" class="aside">{% include nav.html %}</aside>

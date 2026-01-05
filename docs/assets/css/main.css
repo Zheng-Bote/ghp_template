@@ -1,0 +1,54 @@
+:root {
+  color-scheme: light dark;
+
+  --font-family: "Inter", -apple-system, BlinkMacSystemFont, Roboto, Ubuntu,
+    "Segeo UI", "Helvetica Neue", Arial, sans-serif;
+
+  --font-size: 1rem;
+  --font-size-small: 0.8rem;
+  --font-size-large: 1.2rem;
+
+  --font-color: light-dark(hsla(0 0% 0% / 0.9), hsla(0 0% 100% / 0.9));
+  --font-color-header: light-dark(hsla(0 0% 0% / 0.5), hsla(0 0% 0% / 0.5));
+  --font-color-text: light-dark(hsla(0 0% 0% / 0.9), hsla(0 0% 100% / 0.9));
+
+  --primary-color: light-dark(
+    oklch(0.7036 0.0628 236.75),
+    oklch(0.3939 0.084661 235.9342)
+  );
+  --secondary-color: light-dark(
+    oklch(0.8059 0.057 236.25),
+    oklch(0.4956 0.0757 237.94)
+  );
+  --tertiary-color: light-dark(
+    oklch(0.9085 0.0516 235.86),
+    oklch(0.5992 0.0691 238.94)
+  );
+
+  --border-width: 1px;
+  --border-style: solid;
+  --border-radius: 10px;
+
+  --padding5: 5px;
+  --padding10: 10px;
+  --margin5: 5px;
+  --margin10: 10px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+@view-transition {
+  navigation: auto;
+}
+
+@starting-style {
+  html {
+    background-color: var(--primary-color);
+  }
+}

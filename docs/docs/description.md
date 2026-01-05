@@ -1,8 +1,9 @@
 ---
-title: Beschreibung
+title: Description
 layout: page
 ---
 
+<article>
 # Beschreibung
 
 Hier steht die allgemeine Beschreibung deiner Software.
@@ -22,3 +23,5 @@ bla bla
 ### Feature 3
 
 bla bla
+
+</article>
