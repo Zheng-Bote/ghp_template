@@ -1,26 +1,25 @@
-<nav>
-  <h2>&nbsp;</h2>
+<nav class="nav-level">
   {% for item in site.data.nav %}
-    <div>
-      <a href="{{ site.baseurl }}{{ item.url }}"><button>{{ item.title }}</button></a>
-      {% if item.children %}
-        <div>
-          {% for child in item.children %}
-            <div>
-              <a href="{{ site.baseurl }}{{ child.url }}"<button>{{ child.title }}</button></a>
-              {% if child.children %} 
-                <div>
-                  {% for grand in child.children %}
-                    <div>
-                      <a href="{{ grand.url }}"><button>{{ grand.title }}</button></a>
-                    </div>
-                  {% endfor %}
-                </div>
-              {% endif %} 
-            </div>
+  <li>
+    <a href="{{ site.baseurl }}{{ item.url }}">{{ item.title }}</a>
+
+    {% if item.children %}
+    <ul class="nav-sub">
+      {% for child in item.children %}
+      <li>
+        <a href="{{ site.baseurl }}{{ child.url }}">Child: {{ child.title }}</a>
+
+        {% if child.children %}
+        <ul class="nav-sub">
+          {% for grand in child.children %}
+          <li><a href="{{ grand.url }}">{{ grand.title }}</a></li>
           {% endfor %}
-        </div>
-      {% endif %}
-    </div>
+        </ul>
+        {% endif %}
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </li>
   {% endfor %}
 </nav>

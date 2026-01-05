@@ -167,7 +167,23 @@ footer {
 }
 
 /* --- NAV & ASIDE STYLING (Mobile: Horizontal) --- */
-nav,
+
+/* Navigation */
+.nav-level,
+.nav-sub {
+  list-style: none;
+  margin-left: 0;
+}
+
+.nav-level > li {
+  margin-bottom: 0.8rem;
+}
+
+.nav-sub {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+}
+
 aside {
   /* Glass Panel Eigenschaften anwenden */
   background-color: var(--glass-bg-surface);
@@ -201,9 +217,6 @@ aside {
   }
 }
 
-nav {
-  background-color: var(--background-color-nav);
-}
 aside {
   background-color: var(--background-color-aside);
 }
