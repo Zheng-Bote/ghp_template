@@ -169,6 +169,13 @@ footer {
 /* --- NAV & ASIDE STYLING (Mobile: Horizontal) --- */
 
 /* Navigation */
+
+.sidebar {
+  width: fit-content;
+
+  padding: 1.5rem;
+}
+
 .nav-level,
 .nav-sub {
   list-style: none;
@@ -227,7 +234,6 @@ aside a {
   text-decoration: none;
 }*/
 
-nav button,
 aside button {
   width: 100px;
   padding: 8px;
@@ -247,8 +253,7 @@ aside button {
   transition: all 0.2s ease-in-out;
 }
 
-nav button:hover,
-nav button.active,
+aside button.active,
 aside button:hover {
   background-color: var(
     --primary-color
@@ -293,12 +298,7 @@ aside button:hover {
   }
 
   /* Nav und Aside vertikal ausrichten */
-  nav {
-    flex-direction: column; /* Buttons untereinander */
-    justify-content: flex-start;
-    width: 140px; /* Etwas Platz für die 100px Buttons + Padding */
-    align-items: center;
-  }
+
   aside {
     display: none;
   }
@@ -349,9 +349,5 @@ aside button:hover {
   }
   nav {
     width: fit-content;
-
-    & button {
-      width: 150px;
-    }
   }
 }
