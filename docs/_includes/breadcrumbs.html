@@ -7,9 +7,4 @@
     >{{ part | replace: '-', ' ' | capitalize }}</a
   >
   {% endif %} {% endfor %}
-
-  <div>
-    <p>last modified: {{ article.published_at | date: "%Y-%m-%d %H:%M" }}</p>
-    <p>This page was last updated at {{ "now" | date: "%Y-%m-%d %H:%M" }}.</p>
-  </div>
 </nav>
