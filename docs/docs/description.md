@@ -3,13 +3,10 @@ title: Description
 layout: page
 ---
 
-<article>
-<h3>Latest News</h3>
-        <div class="text_70ch">
-          <p>No news at the moment. Please check back later!</p>
-        </div>
-      </article>
+## Latest News
 
-bla bla
+No news at the moment. Please check back later!
 
-</article markdown="0">
+### Details
+
+only some stupid text
