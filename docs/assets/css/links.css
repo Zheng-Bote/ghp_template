@@ -44,6 +44,7 @@ a:not([href^="http"]):not([href^="mailto"]) {
 
 .breadcrumbs {
   font-size: var(--font-size-small);
+  color: red;
   margin-bottom: 1rem;
 
   & a {

@@ -47,6 +47,8 @@ section.listbox p {
   li {
     list-style: none;
   }
+
+  background-color: var(--secondary-color);
 }
 
 table {
