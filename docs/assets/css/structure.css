@@ -85,12 +85,13 @@ aside {
 
   background-color: var(--primary-color);
 
-  width: 300px;
+  width: fit-content;
 
   & ul,
   ol,
   li {
     list-style: none;
+    background-color: yellow;
   }
 
   & a:not([href^="http"]):not([href^="mailto"]) {
