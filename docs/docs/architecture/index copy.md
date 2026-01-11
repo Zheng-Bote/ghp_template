@@ -1,5 +1,6 @@
 ---
 title: Architektur Übersicht
+layout: architecture
 ---
 
 ## Komponenten
