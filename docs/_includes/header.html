@@ -3,15 +3,17 @@
     {% include logo.html %}
     <h1>GHP</h1>
   </div>
-  <div class="header__cell center">center</div>
+  <div class="header__cell center"><!--center--></div>
   <div class="header__cell right">
-    <div class="header__actions"><span>Actions</span><span>right</span></div>
+    <div class="header__actions">
+      <span><!--Actions--></span><span><!--right--></span>
+    </div>
   </div>
 </header>
 
 <script>
-  let header = document.getElementById("header__cell_left");
-  header.addEventListener("click", function () {
-    window.location.href = "{{ site.baseurl }}/docs/index.html";
+  let header__cell_left = document.getElementById("header__cell_left");
+  header__cell_left.addEventListener("click", function () {
+    window.location.href = "{{ site.baseurl }}/index.html";
   });
 </script>

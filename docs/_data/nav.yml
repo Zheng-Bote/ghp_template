@@ -1,11 +1,15 @@
 - title: "Description"
   url: /docs/description
 
-- title: "Features"
-  url: /docs/features/
-
 - title: "Setup"
   url: /docs/setup/
+  children:
+    - title: "Linux"
+      url: /docs/setup/linux
+    - title: "macOS"
+      url: /docs/setup/macos
+    - title: "Windows"
+      url: /docs/setup/windows
 
 - title: "Usage"
   url: /docs/usage/
@@ -18,8 +22,17 @@
   children:
     - title: "Build"
       url: /docs/build/
+      children:
+        - title: "Frontend"
+          url: /docs/build/frontend
+        - title: "Backend"
+          url: /docs/build/backend
+        - title: "Backend Admin"
+          url: /docs/build/backend-admin
     - title: "API's"
       url: /docs/apis/
+    - title: "Deployment"
+      url: /docs/dev/deployment
 
 - title: "Architecture"
   url: /docs/architecture/
