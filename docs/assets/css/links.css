@@ -41,3 +41,12 @@ a:not([href^="http"]):not([href^="mailto"]) {
     no-repeat right;
   background-size: 11px auto;
 }
+
+.breadcrumbs {
+  font-size: var(--font-size-small);
+  margin-bottom: 1rem;
+
+  & a {
+    background: none;
+  }
+}
