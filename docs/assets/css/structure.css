@@ -108,11 +108,6 @@ aside {
 
 .nav-level > li {
   margin-bottom: 0.8rem;
-
-  & a {
-    display: block;
-    background-color: yellow;
-  }
 }
 
 .nav-sub {
