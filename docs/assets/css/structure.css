@@ -91,7 +91,6 @@ aside {
   ol,
   li {
     list-style: none;
-    background-color: yellow;
   }
 
   & a:not([href^="http"]):not([href^="mailto"]) {
@@ -109,6 +108,7 @@ aside {
 
 .nav-level > li {
   margin-bottom: 0.8rem;
+  background-color: yellow;
 }
 
 .nav-sub {
