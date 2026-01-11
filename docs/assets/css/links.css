@@ -47,7 +47,8 @@ a:not([href^="http"]):not([href^="mailto"]) {
   color: red;
   margin-bottom: 1rem;
 
-  & a {
+  & a:not([href^="http"]):not([href^="mailto"]) {
+    padding-right: 1em;
     background: none;
   }
 }

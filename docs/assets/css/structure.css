@@ -115,17 +115,6 @@ aside {
   margin-top: 0.5rem;
 }
 
-/* Breadcrumbs */
-.breadcrumbs {
-  font-size: 0.85rem;
-  margin-bottom: 1rem;
-}
-
-.breadcrumbs a {
-  color: #555;
-  text-decoration: none;
-}
-
 footer {
   grid-area: footer;
 

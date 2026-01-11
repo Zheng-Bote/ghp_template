@@ -26,6 +26,11 @@ section {
   padding: var(--padding5);
   border: var(--border-width) var(--border-style) var(--primary-color);
   border-radius: var(--border-radius);
+
+  & ul {
+    list-style: disc;
+    margin-left: 2em;
+  }
 }
 
 section.listbox p {
@@ -49,6 +54,10 @@ section.listbox p {
   }
 
   background-color: var(--secondary-color);
+  & a:not([href^="http"]):not([href^="mailto"]) {
+    padding-right: 1em;
+    background: none;
+  }
 }
 
 table {

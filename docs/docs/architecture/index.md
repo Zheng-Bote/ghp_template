@@ -3,8 +3,6 @@ title: Architektur Übersicht
 layout: architecture
 ---
 
-# Architektur Übersicht
-
 ## Komponenten
 
 - Komponente A
