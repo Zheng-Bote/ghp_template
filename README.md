@@ -14,17 +14,16 @@
 
 <!-- START doctoc generated TOC please keep comment here to allow auto update -->
 <!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-
 **Table of Contents**
 
 - [Description](#description)
   - [✨ Key Features](#-key-features)
   - [Status](#status)
-- [Documentation \& Screenshots](#documentation--screenshots)
-- [⚙️ Build](#️-build)
+- [Documentation & Screenshots](#documentation--screenshots)
+- [⚙️ Build](#-build)
   - [Build Instructions](#build-instructions)
   - [Project Structure](#project-structure)
-- [🏗️ Architecture](#️-architecture)
+- [🏗️ Architecture](#-architecture)
   - [Component Overview](#component-overview)
   - [Class Diagram](#class-diagram)
   - [Sorting Flow Logic](#sorting-flow-logic)
