@@ -96,7 +96,11 @@
     {% include header.html %} {% include aside.html %}
 
     <main id="main" class="main">
-      {% include breadcrumbs.html %} {{ content }}
+      {% include breadcrumbs.html %}
+      <h1>{{page.title}}</h1>
+
+      <article>{% include toc.html %}</article>
+      {{ content }}
     </main>
 
     {% include footer.html %}
