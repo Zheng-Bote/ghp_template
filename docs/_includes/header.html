@@ -1,5 +1,5 @@
 <header id="header" class="header">
-  <div class="header__cell left">
+  <div id="header__cell_left" class="header__cell left">
     {% include logo.html %}
     <h1>GHP</h1>
   </div>
@@ -8,3 +8,10 @@
     <div class="header__actions"><span>Actions</span><span>right</span></div>
   </div>
 </header>
+
+<script>
+  let header = document.getElementById("header__cell_left");
+  header.addEventListener("click", function () {
+    window.location.href = "{{ site.baseurl }}/docs/index.html";
+  });
+</script>
