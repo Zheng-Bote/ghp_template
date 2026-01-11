@@ -58,6 +58,7 @@ header {
 }
 .header__cell--left {
   justify-content: flex-start;
+  cursor: pointer;
 }
 .header__cell--center {
   justify-content: center;
@@ -142,6 +143,7 @@ footer {
   & .footer-section_center {
     text-align: center;
     flex-grow: 1;
+    cursor: pointer;
   }
   & .footer-section_right {
     text-align: right;

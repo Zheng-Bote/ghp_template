@@ -20,6 +20,8 @@
 - title: "Development"
   url: /docs/development/
   children:
+    - title: "API's"
+      url: /docs/apis/
     - title: "Build"
       url: /docs/build/
       children:
@@ -27,16 +29,16 @@
           url: /docs/build/frontend
         - title: "Backend"
           url: /docs/build/backend
-        - title: "Backend Admin"
-          url: /docs/build/backend-admin
-    - title: "API's"
-      url: /docs/apis/
+        - title: "Database"
+          url: /docs/build/database
     - title: "Deployment"
       url: /docs/dev/deployment
 
 - title: "Architecture"
   url: /docs/architecture/
   children:
+    - title: "Overview"
+      url: /docs/architecture/
     - title: "Frontend"
       url: /docs/architecture/frontend
     - title: "Backend"
