@@ -85,6 +85,8 @@ aside {
 
   background-color: var(--primary-color);
 
+  width: 300px;
+
   & ul,
   ol,
   li {
@@ -95,6 +97,22 @@ aside {
     background: none;
     color: var(--font-color-header);
   }
+}
+
+/* Navigation */
+.nav-level,
+.nav-sub {
+  list-style: none;
+  margin-left: 0;
+}
+
+.nav-level > li {
+  margin-bottom: 0.8rem;
+}
+
+.nav-sub {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
 }
 
 footer {
